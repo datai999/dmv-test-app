@@ -53,6 +53,7 @@
 
     document.getElementById('header').onclick = function () {
         let src = document.getElementById("img").src;
+        window.scrollTo({ top: 0, behavior: 'smooth' });
         if (src.endsWith("0.png")) {
             document.getElementById("img").src = src.replace("0.png", "1.png");
             return;
